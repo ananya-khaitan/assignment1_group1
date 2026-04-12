@@ -1,6 +1,7 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage{grffile}
 \usepackage{booktabs}
 \usepackage{geometry}
 \usepackage{float}
@@ -10,7 +11,7 @@
 \geometry{margin=0.9in}
 
 \title{\textbf{Critical Mineral Company Stocks:\\ VMD-Based Forecasting and Systematic Trading}}
-\author{Pratham Lahoti $\cdot$ Shriya Rode $\cdot$ Aditya Kothari}
+\author{Ananya Khaitan $\cdot$ Arnav Goel $\cdot$ Arjun Sabnis}
 \date{\today}
 
 \begin{document}
@@ -111,51 +112,51 @@ Financial markets aren't purely logical; they are heavily influenced by hype, ne
 
 \begin{center}
     \captionof{table}{Data Description and Sourcing}
-    \resizebox{0.8\textwidth}{!}{ \input{Table_1_Data_Description.tex} }
+    \resizebox{0.8\textwidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_1_Data_Description.tex} }
 \end{center}
 
 \begin{table}[H]
     \caption{Descriptive Statistics of Market Data}
     \vspace{0.2em}
-    \begin{minipage}{0.48\textwidth} \centering \textbf{EnergyFuels} \resizebox{\linewidth}{!}{ \input{Table_4_1.tex} } \end{minipage}\hfill
-    \begin{minipage}{0.48\textwidth} \centering \textbf{Arafura} \resizebox{\linewidth}{!}{ \input{Table_4_2.tex} } \end{minipage}
+    \begin{minipage}{0.48\textwidth} \centering \textbf{EnergyFuels} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_4_1.tex} } \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth} \centering \textbf{Arafura} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_4_2.tex} } \end{minipage}
     \vspace{0.5em}
 
-    \begin{minipage}{0.48\textwidth} \centering \textbf{NeoPerformance} \resizebox{\linewidth}{!}{ \input{Table_4_3.tex} } \end{minipage}\hfill
-    \begin{minipage}{0.48\textwidth} \centering \textbf{Iluka} \resizebox{\linewidth}{!}{ \input{Table_4_4.tex} } \end{minipage}
+    \begin{minipage}{0.48\textwidth} \centering \textbf{NeoPerformance} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_4_3.tex} } \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth} \centering \textbf{Iluka} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_4_4.tex} } \end{minipage}
     \vspace{0.5em}
 
-    \begin{minipage}{0.48\textwidth} \centering \textbf{Shenghe} \resizebox{\linewidth}{!}{ \input{Table_4_5.tex} } \end{minipage}\hfill
-    \begin{minipage}{0.48\textwidth} \centering \textbf{MPMaterials} \resizebox{\linewidth}{!}{ \input{Table_4_6.tex} } \end{minipage}
+    \begin{minipage}{0.48\textwidth} \centering \textbf{Shenghe} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_4_5.tex} } \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth} \centering \textbf{MPMaterials} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_4_6.tex} } \end{minipage}
     \vspace{0.5em}
 
-    \begin{minipage}{0.48\textwidth} \centering \textbf{Lynas} \resizebox{\linewidth}{!}{ \input{Table_4_7.tex} } \end{minipage}\hfill
-    \begin{minipage}{0.48\textwidth} \centering \textbf{ChinaNorthern} \resizebox{\linewidth}{!}{ \input{Table_4_8.tex} } \end{minipage}
+    \begin{minipage}{0.48\textwidth} \centering \textbf{Lynas} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_4_7.tex} } \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth} \centering \textbf{ChinaNorthern} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_4_8.tex} } \end{minipage}
     \vspace{0.5em}
 \end{table}
 
 \begin{figure}[H]
     \centering \caption{Raw Rare Earth Index Price Over Time}
-    \includegraphics[width=1.0\textwidth]{Figure_2_Original_Price_Series_row1.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_2_Original_Price_Series_row2.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_2_Original_Price_Series_row3.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_2_Original_Price_Series_row4.png}
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_2_Original_Price_Series_row1.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_2_Original_Price_Series_row2.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_2_Original_Price_Series_row3.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_2_Original_Price_Series_row4.png}
 \end{figure}
 
 \begin{figure}[H]
     \centering \caption{A Closer Look at the Volatility (2021)}
-    \includegraphics[width=1.0\textwidth]{Figure_4_Zoomed_Price_row1.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_4_Zoomed_Price_row2.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_4_Zoomed_Price_row3.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_4_Zoomed_Price_row4.png}
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_4_Zoomed_Price_row1.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_4_Zoomed_Price_row2.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_4_Zoomed_Price_row3.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_4_Zoomed_Price_row4.png}
 \end{figure}
 
 \begin{figure}[H]
     \centering \caption{Correlation Heatmap Showing How Closely the Inputs Move Together}
-    \includegraphics[width=1.0\textwidth]{Figure_5_Feature_Heatmap_row1.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_5_Feature_Heatmap_row2.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_5_Feature_Heatmap_row3.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_5_Feature_Heatmap_row4.png}
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_5_Feature_Heatmap_row1.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_5_Feature_Heatmap_row2.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_5_Feature_Heatmap_row3.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_5_Feature_Heatmap_row4.png}
 \end{figure}
 
 
@@ -165,10 +166,10 @@ Trying to predict a jagged, volatile chart is hard. So, we use Variational Mode 
 
 \begin{figure}[H]
     \centering \caption{Separating the Target Price into Four Manageable Modes}
-    \includegraphics[width=1.0\textwidth]{Figure_3_VMD_Decomposition_row1.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_3_VMD_Decomposition_row2.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_3_VMD_Decomposition_row3.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_3_VMD_Decomposition_row4.png}
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_3_VMD_Decomposition_row1.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_3_VMD_Decomposition_row2.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_3_VMD_Decomposition_row3.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_3_VMD_Decomposition_row4.png}
 \end{figure}
 
 
@@ -177,29 +178,29 @@ Once we have our four separate waves, we need to decide how to treat them. We me
 
 \begin{table}[H]
     \caption{Categorized Separated Modes (VMD Entropy Grid)}
-    \begin{minipage}{0.48\textwidth} \centering \textbf{EnergyFuels} \resizebox{\linewidth}{!}{ \input{Table_5_1.tex} } \end{minipage}\hfill
-    \begin{minipage}{0.48\textwidth} \centering \textbf{Arafura} \resizebox{\linewidth}{!}{ \input{Table_5_2.tex} } \end{minipage}
+    \begin{minipage}{0.48\textwidth} \centering \textbf{EnergyFuels} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_5_1.tex} } \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth} \centering \textbf{Arafura} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_5_2.tex} } \end{minipage}
     \vspace{0.5em}
 
-    \begin{minipage}{0.48\textwidth} \centering \textbf{NeoPerformance} \resizebox{\linewidth}{!}{ \input{Table_5_3.tex} } \end{minipage}\hfill
-    \begin{minipage}{0.48\textwidth} \centering \textbf{Iluka} \resizebox{\linewidth}{!}{ \input{Table_5_4.tex} } \end{minipage}
+    \begin{minipage}{0.48\textwidth} \centering \textbf{NeoPerformance} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_5_3.tex} } \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth} \centering \textbf{Iluka} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_5_4.tex} } \end{minipage}
     \vspace{0.5em}
 
-    \begin{minipage}{0.48\textwidth} \centering \textbf{Shenghe} \resizebox{\linewidth}{!}{ \input{Table_5_5.tex} } \end{minipage}\hfill
-    \begin{minipage}{0.48\textwidth} \centering \textbf{MPMaterials} \resizebox{\linewidth}{!}{ \input{Table_5_6.tex} } \end{minipage}
+    \begin{minipage}{0.48\textwidth} \centering \textbf{Shenghe} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_5_5.tex} } \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth} \centering \textbf{MPMaterials} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_5_6.tex} } \end{minipage}
     \vspace{0.5em}
 
-    \begin{minipage}{0.48\textwidth} \centering \textbf{Lynas} \resizebox{\linewidth}{!}{ \input{Table_5_7.tex} } \end{minipage}\hfill
-    \begin{minipage}{0.48\textwidth} \centering \textbf{ChinaNorthern} \resizebox{\linewidth}{!}{ \input{Table_5_8.tex} } \end{minipage}
+    \begin{minipage}{0.48\textwidth} \centering \textbf{Lynas} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_5_7.tex} } \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth} \centering \textbf{ChinaNorthern} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_5_8.tex} } \end{minipage}
     \vspace{0.5em}
 \end{table}
 
 \begin{figure}[H]
     \centering \caption{Chaos Levels (Entropy) of the Separated Modes}
-    \includegraphics[width=1.0\textwidth]{Figure_8_Entropy_row1.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_8_Entropy_row2.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_8_Entropy_row3.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_8_Entropy_row4.png}
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_8_Entropy_row1.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_8_Entropy_row2.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_8_Entropy_row3.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_8_Entropy_row4.png}
 \end{figure}
 
 
@@ -207,20 +208,20 @@ Not every indicator (like Google Trends or Crude Oil) is useful for predicting e
 
 \begin{table}[H]
     \caption{LASSO Feature Selection Grid}
-    \begin{minipage}{0.48\textwidth} \centering \textbf{EnergyFuels} \resizebox{\linewidth}{!}{ \input{Table_6_1.tex} } \end{minipage}\hfill
-    \begin{minipage}{0.48\textwidth} \centering \textbf{Arafura} \resizebox{\linewidth}{!}{ \input{Table_6_2.tex} } \end{minipage}
+    \begin{minipage}{0.48\textwidth} \centering \textbf{EnergyFuels} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_6_1.tex} } \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth} \centering \textbf{Arafura} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_6_2.tex} } \end{minipage}
     \vspace{0.5em}
 
-    \begin{minipage}{0.48\textwidth} \centering \textbf{NeoPerformance} \resizebox{\linewidth}{!}{ \input{Table_6_3.tex} } \end{minipage}\hfill
-    \begin{minipage}{0.48\textwidth} \centering \textbf{Iluka} \resizebox{\linewidth}{!}{ \input{Table_6_4.tex} } \end{minipage}
+    \begin{minipage}{0.48\textwidth} \centering \textbf{NeoPerformance} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_6_3.tex} } \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth} \centering \textbf{Iluka} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_6_4.tex} } \end{minipage}
     \vspace{0.5em}
 
-    \begin{minipage}{0.48\textwidth} \centering \textbf{Shenghe} \resizebox{\linewidth}{!}{ \input{Table_6_5.tex} } \end{minipage}\hfill
-    \begin{minipage}{0.48\textwidth} \centering \textbf{MPMaterials} \resizebox{\linewidth}{!}{ \input{Table_6_6.tex} } \end{minipage}
+    \begin{minipage}{0.48\textwidth} \centering \textbf{Shenghe} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_6_5.tex} } \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth} \centering \textbf{MPMaterials} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_6_6.tex} } \end{minipage}
     \vspace{0.5em}
 
-    \begin{minipage}{0.48\textwidth} \centering \textbf{Lynas} \resizebox{\linewidth}{!}{ \input{Table_6_7.tex} } \end{minipage}\hfill
-    \begin{minipage}{0.48\textwidth} \centering \textbf{ChinaNorthern} \resizebox{\linewidth}{!}{ \input{Table_6_8.tex} } \end{minipage}
+    \begin{minipage}{0.48\textwidth} \centering \textbf{Lynas} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_6_7.tex} } \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth} \centering \textbf{ChinaNorthern} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_6_8.tex} } \end{minipage}
     \vspace{0.5em}
 \end{table}
 
@@ -230,35 +231,35 @@ Since we categorized the data perfectly, the forecasting job becomes much easier
 
 \begin{table}[H]
     \caption{Overall Forecasting Accuracy Compared to Benchmarks}
-    \begin{minipage}{0.48\textwidth} \centering \textbf{EnergyFuels} \resizebox{\linewidth}{!}{ \input{Table_7_1.tex} } \end{minipage}\hfill
-    \begin{minipage}{0.48\textwidth} \centering \textbf{Arafura} \resizebox{\linewidth}{!}{ \input{Table_7_2.tex} } \end{minipage}
+    \begin{minipage}{0.48\textwidth} \centering \textbf{EnergyFuels} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_7_1.tex} } \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth} \centering \textbf{Arafura} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_7_2.tex} } \end{minipage}
     \vspace{0.5em}
 
-    \begin{minipage}{0.48\textwidth} \centering \textbf{NeoPerformance} \resizebox{\linewidth}{!}{ \input{Table_7_3.tex} } \end{minipage}\hfill
-    \begin{minipage}{0.48\textwidth} \centering \textbf{Iluka} \resizebox{\linewidth}{!}{ \input{Table_7_4.tex} } \end{minipage}
+    \begin{minipage}{0.48\textwidth} \centering \textbf{NeoPerformance} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_7_3.tex} } \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth} \centering \textbf{Iluka} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_7_4.tex} } \end{minipage}
     \vspace{0.5em}
 
-    \begin{minipage}{0.48\textwidth} \centering \textbf{Shenghe} \resizebox{\linewidth}{!}{ \input{Table_7_5.tex} } \end{minipage}\hfill
-    \begin{minipage}{0.48\textwidth} \centering \textbf{MPMaterials} \resizebox{\linewidth}{!}{ \input{Table_7_6.tex} } \end{minipage}
+    \begin{minipage}{0.48\textwidth} \centering \textbf{Shenghe} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_7_5.tex} } \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth} \centering \textbf{MPMaterials} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_7_6.tex} } \end{minipage}
     \vspace{0.5em}
 
-    \begin{minipage}{0.48\textwidth} \centering \textbf{Lynas} \resizebox{\linewidth}{!}{ \input{Table_7_7.tex} } \end{minipage}\hfill
-    \begin{minipage}{0.48\textwidth} \centering \textbf{ChinaNorthern} \resizebox{\linewidth}{!}{ \input{Table_7_8.tex} } \end{minipage}
+    \begin{minipage}{0.48\textwidth} \centering \textbf{Lynas} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_7_7.tex} } \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth} \centering \textbf{ChinaNorthern} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_7_8.tex} } \end{minipage}
     \vspace{0.5em}
 
 \end{table}
 
 \begin{figure}[H]
     \centering \caption{How Our Hybrid Forecast Tracked the Actual Price Out-of-Sample}
-    \includegraphics[width=1.0\textwidth]{Figure_6_Prediction_Plot_row1.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_6_Prediction_Plot_row2.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_6_Prediction_Plot_row3.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_6_Prediction_Plot_row4.png}
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_6_Prediction_Plot_row1.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_6_Prediction_Plot_row2.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_6_Prediction_Plot_row3.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_6_Prediction_Plot_row4.png}
 \end{figure}
 
 \begin{table}[H]
     \centering \caption{Validating Our Model Mathematically (Diebold-Mariano Test)}
-    \resizebox{0.5\textwidth}{!}{ \input{Table_11_DM_Test.tex} }
+    \resizebox{0.5\textwidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_11_DM_Test.tex} }
 \end{table}
 
 \subsection{3.4 Trading Strategy Performance}
@@ -272,46 +273,46 @@ We then built a trading simulator assuming a standard 0.05\% fee every time we t
 
 \begin{table}[H]
     \caption{Final Trading Strategy Returns (Assuming 0.05\% Fees)}
-    \begin{minipage}{0.48\textwidth} \centering \textbf{EnergyFuels} \resizebox{\linewidth}{!}{ \input{Table_8_1.tex} } \end{minipage}\hfill
-    \begin{minipage}{0.48\textwidth} \centering \textbf{Arafura} \resizebox{\linewidth}{!}{ \input{Table_8_2.tex} } \end{minipage}
+    \begin{minipage}{0.48\textwidth} \centering \textbf{EnergyFuels} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_8_1.tex} } \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth} \centering \textbf{Arafura} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_8_2.tex} } \end{minipage}
     \vspace{0.5em}
 
-    \begin{minipage}{0.48\textwidth} \centering \textbf{NeoPerformance} \resizebox{\linewidth}{!}{ \input{Table_8_3.tex} } \end{minipage}\hfill
-    \begin{minipage}{0.48\textwidth} \centering \textbf{Iluka} \resizebox{\linewidth}{!}{ \input{Table_8_4.tex} } \end{minipage}
+    \begin{minipage}{0.48\textwidth} \centering \textbf{NeoPerformance} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_8_3.tex} } \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth} \centering \textbf{Iluka} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_8_4.tex} } \end{minipage}
     \vspace{0.5em}
 
-    \begin{minipage}{0.48\textwidth} \centering \textbf{Shenghe} \resizebox{\linewidth}{!}{ \input{Table_8_5.tex} } \end{minipage}\hfill
-    \begin{minipage}{0.48\textwidth} \centering \textbf{MPMaterials} \resizebox{\linewidth}{!}{ \input{Table_8_6.tex} } \end{minipage}
+    \begin{minipage}{0.48\textwidth} \centering \textbf{Shenghe} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_8_5.tex} } \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth} \centering \textbf{MPMaterials} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_8_6.tex} } \end{minipage}
     \vspace{0.5em}
 
-    \begin{minipage}{0.48\textwidth} \centering \textbf{Lynas} \resizebox{\linewidth}{!}{ \input{Table_8_7.tex} } \end{minipage}\hfill
-    \begin{minipage}{0.48\textwidth} \centering \textbf{ChinaNorthern} \resizebox{\linewidth}{!}{ \input{Table_8_8.tex} } \end{minipage}
+    \begin{minipage}{0.48\textwidth} \centering \textbf{Lynas} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_8_7.tex} } \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth} \centering \textbf{ChinaNorthern} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_8_8.tex} } \end{minipage}
     \vspace{0.5em}
 
 \end{table}
 
 \begin{figure}[H]
     \centering \caption{Equity Curve: What Happens When We Follow the Basic Strategy}
-    \includegraphics[width=1.0\textwidth]{Figure_9_Cumulative_Return_Basic_row1.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_9_Cumulative_Return_Basic_row2.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_9_Cumulative_Return_Basic_row3.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_9_Cumulative_Return_Basic_row4.png}
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_9_Cumulative_Return_Basic_row1.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_9_Cumulative_Return_Basic_row2.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_9_Cumulative_Return_Basic_row3.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_9_Cumulative_Return_Basic_row4.png}
 \end{figure}
 
 \begin{figure}[H]
     \centering \caption{Equity Curve: How Our Interval Strategy Steered Clear of Crashes}
-    \includegraphics[width=1.0\textwidth]{Figure_10_Cumulative_Return_Interval_row1.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_10_Cumulative_Return_Interval_row2.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_10_Cumulative_Return_Interval_row3.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_10_Cumulative_Return_Interval_row4.png}
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_10_Cumulative_Return_Interval_row1.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_10_Cumulative_Return_Interval_row2.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_10_Cumulative_Return_Interval_row3.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_10_Cumulative_Return_Interval_row4.png}
 \end{figure}
 
 \begin{figure}[H]
     \centering \caption{Maximum Drawdowns (Notice how the worst losses are avoided)}
-    \includegraphics[width=1.0\textwidth]{Figure_11_Drawdown_row1.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_11_Drawdown_row2.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_11_Drawdown_row3.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_11_Drawdown_row4.png}
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_11_Drawdown_row1.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_11_Drawdown_row2.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_11_Drawdown_row3.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_11_Drawdown_row4.png}
 \end{figure}
 
 
@@ -320,40 +321,40 @@ Finally, we want to make sure the model isn't just getting lucky. We evaluate ho
 
 \begin{table}[H]
     \centering \caption{How Performance Changes If Trading Gets Expensive}
-    \resizebox{0.5\textwidth}{!}{ \input{Table_9_Transaction_Cost.tex} }
+    \resizebox{0.5\textwidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_9_Transaction_Cost.tex} }
 \end{table}
 
 \begin{table}[H]
     \caption{Robustness Check: Sliding Window Performance}
-    \begin{minipage}{0.48\textwidth} \centering \textbf{EnergyFuels} \resizebox{\linewidth}{!}{ \input{Table_10_1.tex} } \end{minipage}\hfill
-    \begin{minipage}{0.48\textwidth} \centering \textbf{Arafura} \resizebox{\linewidth}{!}{ \input{Table_10_2.tex} } \end{minipage}
+    \begin{minipage}{0.48\textwidth} \centering \textbf{EnergyFuels} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_10_1.tex} } \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth} \centering \textbf{Arafura} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_10_2.tex} } \end{minipage}
     \vspace{0.5em}
 
-    \begin{minipage}{0.48\textwidth} \centering \textbf{NeoPerformance} \resizebox{\linewidth}{!}{ \input{Table_10_3.tex} } \end{minipage}\hfill
-    \begin{minipage}{0.48\textwidth} \centering \textbf{Iluka} \resizebox{\linewidth}{!}{ \input{Table_10_4.tex} } \end{minipage}
+    \begin{minipage}{0.48\textwidth} \centering \textbf{NeoPerformance} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_10_3.tex} } \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth} \centering \textbf{Iluka} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_10_4.tex} } \end{minipage}
     \vspace{0.5em}
 
-    \begin{minipage}{0.48\textwidth} \centering \textbf{Shenghe} \resizebox{\linewidth}{!}{ \input{Table_10_5.tex} } \end{minipage}\hfill
-    \begin{minipage}{0.48\textwidth} \centering \textbf{MPMaterials} \resizebox{\linewidth}{!}{ \input{Table_10_6.tex} } \end{minipage}
+    \begin{minipage}{0.48\textwidth} \centering \textbf{Shenghe} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_10_5.tex} } \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth} \centering \textbf{MPMaterials} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_10_6.tex} } \end{minipage}
     \vspace{0.5em}
 
-    \begin{minipage}{0.48\textwidth} \centering \textbf{Lynas} \resizebox{\linewidth}{!}{ \input{Table_10_7.tex} } \end{minipage}\hfill
-    \begin{minipage}{0.48\textwidth} \centering \textbf{ChinaNorthern} \resizebox{\linewidth}{!}{ \input{Table_10_8.tex} } \end{minipage}
+    \begin{minipage}{0.48\textwidth} \centering \textbf{Lynas} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_10_7.tex} } \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth} \centering \textbf{ChinaNorthern} \resizebox{\linewidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_10_8.tex} } \end{minipage}
     \vspace{0.5em}
 
 \end{table}
 
 \begin{figure}[H]
     \centering \caption{Checking Error Rates Across Different Years}
-    \includegraphics[width=1.0\textwidth]{Figure_13_Robustness_Check_row1.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_13_Robustness_Check_row2.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_13_Robustness_Check_row3.png}\\[0.2em]
-    \includegraphics[width=1.0\textwidth]{Figure_13_Robustness_Check_row4.png}
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_13_Robustness_Check_row1.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_13_Robustness_Check_row2.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_13_Robustness_Check_row3.png}\\[0.2em]
+    \includegraphics[width=1.0\textwidth]{../3. Code Files/all_figures_tables/Figure_13_Robustness_Check_row4.png}
 \end{figure}
 
 \begin{table}[H]
     \centering \caption{The Deep Learning Engine Settings We Used Under the Hood}
-    \resizebox{0.5\textwidth}{!}{ \input{Table_12_Parameters.tex} }
+    \resizebox{0.5\textwidth}{!}{ \input{../3. Code Files/all_figures_tables/Table_12_Parameters.tex} }
 \end{table}
 
 \section{4. Conclusion and Key Takeaways}
@@ -362,11 +363,11 @@ This report proves that our specialized framework is incredibly effective at han
 
 \\begin{figure}[H]
 \\centering
-\\includegraphics[width=0.48\\linewidth]{Figure_13_Robustness_Check_row1.png}\\hfill
-\\includegraphics[width=0.48\\linewidth]{Figure_13_Robustness_Check_row2.png}
+\\includegraphics[width=0.48\\linewidth]{../3. Code Files/all_figures_tables/Figure_13_Robustness_Check_row1.png}\\hfill
+\\includegraphics[width=0.48\\linewidth]{../3. Code Files/all_figures_tables/Figure_13_Robustness_Check_row2.png}
 \\vspace{0.2cm}
-\\includegraphics[width=0.48\\linewidth]{Figure_13_Robustness_Check_row3.png}\\hfill
-\\includegraphics[width=0.48\\linewidth]{Figure_13_Robustness_Check_row4.png}
+\\includegraphics[width=0.48\\linewidth]{../3. Code Files/all_figures_tables/Figure_13_Robustness_Check_row3.png}\\hfill
+\\includegraphics[width=0.48\\linewidth]{../3. Code Files/all_figures_tables/Figure_13_Robustness_Check_row4.png}
 \\caption{Robustness Analysis across limits}
 \\end{figure}
 
